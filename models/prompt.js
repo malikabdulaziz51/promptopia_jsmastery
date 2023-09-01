@@ -1,9 +1,9 @@
-import mongoose, { Schema, model, models } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const PromptSchema = new Schema({
   creator: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+    type: Schema.Types.ObjectId,
+    ref: "user",
   },
   prompt: {
     type: String,
